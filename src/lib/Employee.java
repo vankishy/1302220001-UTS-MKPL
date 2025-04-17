@@ -70,7 +70,7 @@ public class Employee {
 		};
 
 		if (isForeigner) {
-			baseSalary *= 1.5;
+			baseSalary *= 0.5;
 		}
 		monthlySalary = (int) baseSalary;
 	}
@@ -92,8 +92,8 @@ public class Employee {
 		children.add(new Child(name, idNumber));
 	}
 
-	// Menghitung berapa lama pegawai bekerja dalam setahun ini, jika pegawai sudah
-	// bekerja dari tahun sebelumnya maka otomatis dianggap 12 bulan.
+	/* Menghitung berapa lama pegawai bekerja dalam setahun ini, jika pegawai sudah
+	bekerja dari tahun sebelumnya maka otomatis dianggap 12 bulan. */
 	private int calculateMonthsWorkedThisYear() {
 		LocalDate date = LocalDate.now();
 

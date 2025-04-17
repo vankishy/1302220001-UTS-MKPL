@@ -111,4 +111,8 @@ public class Employee {
 		return TaxFunction.calculateTax(monthlySalary, otherMonthlyIncome, monthsWorked, annualDeductible,
 				hasSpouse, children.size());
 	}
+
+	public List<Child> getChildren() {
+		return children;
+	}
 }
